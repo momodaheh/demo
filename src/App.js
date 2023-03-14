@@ -38,10 +38,6 @@ const CarouselStyle = {
   textAlign: "center",
   background: "#364d79",
 };
-const PanelStyle={
-  margin: 0,
-  padding: 0
-}
 const { Panel } = Collapse;
 const App = () => {
   const onChange = (currentSlide) => {
@@ -67,15 +63,15 @@ const App = () => {
         <Layout>
           <Sider style={siderStyle}>
             <Collapse accordion ghost={true}>
-              <Panel header="目录 1" key="1" style={PanelStyle}>
+              <Panel header="目录 1" key="1" >
                 <p>选项1</p>
                 <p>选项2</p>
               </Panel>
-              <Panel header="目录 2" key="2" style={PanelStyle}>
+              <Panel header="目录 2" key="2" >
                 <p>选项3</p>
                 <p>选项4</p>
               </Panel>
-              <Panel header="目录 3" key="3" style={PanelStyle}>
+              <Panel header="目录 3" key="3" >
                 <p>选项5</p>
               </Panel>
             </Collapse>
@@ -83,16 +79,16 @@ const App = () => {
           <Content style={contentStyle}>
             <Carousel afterChange={onChange}>
               <div>
-                <h3 style={CarouselStyle}>1</h3>
+                <h3 style={CarouselStyle}>你</h3>
               </div>
               <div>
-                <h3 style={CarouselStyle}>2</h3>
+                <h3 style={CarouselStyle}>好</h3>
               </div>
               <div>
-                <h3 style={CarouselStyle}>3</h3>
+                <h3 style={CarouselStyle}>啊</h3>
               </div>
               <div>
-                <h3 style={CarouselStyle}>4</h3>
+                <h3 style={CarouselStyle}>!</h3>
               </div>
             </Carousel>
           </Content>
