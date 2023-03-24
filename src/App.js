@@ -150,6 +150,7 @@ import { Layout, Space, Menu, Collapse } from "antd";
 import { Route, Routes,Link } from "react-router-dom";
 import class1 from "./pages/class1";
 import class2 from "./pages/class2";
+import Class3 from "./pages/class3";
 const { Header, Footer, Sider, Content } = Layout;
 
 const headerStyle = {
@@ -205,6 +206,7 @@ const App = () => {
           <Menu theme="dark"mode="horizontal"defaultSelectedKeys={["2"]}>
             <Menu.Item key="1"><Link to="/class1">class1</Link></Menu.Item>
             <Menu.Item key="2"><Link to="/class2">class2</Link></Menu.Item>
+            <Menu.Item key="3"><Link to="/class3">class3</Link></Menu.Item>
           </Menu>
         </Header>
         <Layout>
@@ -227,6 +229,7 @@ const App = () => {
             <Routes>
               <Route path="/class1" Component={class1}></Route>
               <Route path="/class2" Component={class2}></Route>
+              <Route path="/class3" Component={Class3} />
             </Routes>
           </Content>
         </Layout>
